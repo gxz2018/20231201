@@ -73,13 +73,13 @@ fi
 	read -p "是否安装被控端文件(首次执行必须安装)[y/N]" down_files
 	if [[ "$down_files" =~ ^[yY]$ ]]; then
 		echo "正在下载gost2.11版本"
-		wget https://github.com/gxz2018/unying/blob/main/gost -O /usr/bin/gost
+		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget https://github.com/gxz2018/unying/blob/main/ip_table -O /usr/bin/ip_table
+		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/masterr/ip_table -O /usr/bin/ip_table
 		chmod +x /usr/bin/ip_table
 		echo "正在下载brook"
-		wget https://github.com/gxz2018/unying/blob/main/brook -O /usr/bin/brook
+		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/brook -O /usr/bin/brook
 		chmod +x /usr/bin/brook
 	fi
 	echo "转发端初始完成！请手动 crontab -e 添加定时任务！"
@@ -96,10 +96,10 @@ beikong1_chushihua(){
 	read -p "是否下载被控端文件(首次执行必须安装)[y/N]" down_files_1
 	if [[ "$down_files_1" =~ ^[yY]$ ]]; then
 		echo "正在下载gost2.11版本"
-		wget http://eltty.elttycn.com/gost -O /usr/bin/gost
+		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget http://eltty.elttycn.com/iptables_gost -O /usr/bin/iptables_gost
+		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/iptables_gost -O /usr/bin/iptables_gost
 		chmod +x /usr/bin/iptables_gost
 	fi
 	echo "被控端端初始完成！请手动 crontab -e 添加定时任务！"
