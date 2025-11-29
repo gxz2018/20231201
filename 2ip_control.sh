@@ -76,7 +76,7 @@ fi
 		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/gost -O /usr/bin/gost
 		chmod +x /usr/bin/gost
 		echo "正在下载被控端"
-		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/masterr/ip_table -O /usr/bin/ip_table
+		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/ip_table -O /usr/bin/ip_table
 		chmod +x /usr/bin/ip_table
 		echo "正在下载brook"
 		wget https://raw.githubusercontent.com/gxz2018/20231201/refs/heads/master/brook -O /usr/bin/brook
